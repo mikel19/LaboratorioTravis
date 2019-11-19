@@ -6,7 +6,7 @@ jdk:
   -openjdk8
 
 script:
-  -mvn test -DargLine="DContiperf.activate=false"
+  -mvn test -DargLine="-DContiperf.active=false"
 
 branches:
 
@@ -14,7 +14,7 @@ branches:
     - development_junit
 
   except:
-    
+
     - master
     - development
 
