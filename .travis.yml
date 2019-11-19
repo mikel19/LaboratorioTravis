@@ -1,3 +1,5 @@
 language: java
 
-install: ./install-dependencies.sh
+install: 
+  - bundle install --path vendor/bundle
+  - npm install
