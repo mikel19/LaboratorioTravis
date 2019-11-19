@@ -1,5 +1,20 @@
 language: java
 
-install: 
-  - bundle install --path vendor/bundle
-  - npm install
+os: linux
+
+jdk:
+  -openjdk8
+
+script:
+  -mvn test -DargLine="DContiperf.activate=false"
+
+branches:
+
+  only:
+    - development_junit
+
+  except:
+    - master
+    - development
+
+
