@@ -59,7 +59,7 @@ public class MoneyPerfTest
 	
 	@Test 
 	@PerfTest(invocations = 1000, threads = 20)
-	@Required(max = 120, average = 30)
+	@Required(max = 300, average = 300)
 	public void testBagMultiply() throws Exception
 	{
 		logger.info("Starting testBagMultiply");
